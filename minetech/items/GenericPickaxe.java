@@ -1,7 +1,7 @@
-package mods.minetech.items;
+package mod.minetech.items;
 
-import mods.minetech.MTCore;
-import mods.minetech.MTEnumToolMaterial;
+import mod.minetech.MTCore;
+import mod.minetech.MTEnumToolMaterial;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;

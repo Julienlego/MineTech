@@ -1,11 +1,11 @@
-package mods.minetech.block;
+package mod.minetech.block;
 
 import java.util.Random;
 
-import mods.minetech.MTCore;
-import mods.minetech.container.GenericBlockContainer;
-import mods.minetech.tileentities.TileEntityBioCarbonizer;
-import mods.minetech.tileentities.TileEntityIncinerator;
+import mod.minetech.MTCore;
+import mod.minetech.container.GenericBlockContainer;
+import mod.minetech.tileentities.TileEntityBioCarbonizer;
+import mod.minetech.tileentities.TileEntityIncinerator;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;

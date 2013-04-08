@@ -1,8 +1,8 @@
-package mods.minetech.tileentities;
+package mod.minetech.tileentities;
 
-import mods.minetech.MTCore;
-import mods.minetech.block.BlockBlast;
-import mods.minetech.util.BlastRecipes;
+import mod.minetech.MTCore;
+import mod.minetech.block.BlockBlast;
+import mod.minetech.util.BlastRecipes;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;

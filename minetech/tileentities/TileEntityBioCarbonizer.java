@@ -1,8 +1,8 @@
-package mods.minetech.tileentities;
+package mod.minetech.tileentities;
 
-import mods.minetech.MTCore;
-import mods.minetech.block.BlockBioCarbonizer;
-import mods.minetech.util.BioCarbonizerRecipes;
+import mod.minetech.MTCore;
+import mod.minetech.block.BlockBioCarbonizer;
+import mod.minetech.util.BioCarbonizerRecipes;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;

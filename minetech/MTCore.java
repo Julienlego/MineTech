@@ -1,4 +1,4 @@
-package mods.minetech;
+package mod.minetech;
 
 import mod.minetech.block.BlockBauxite;
 import mod.minetech.block.BlockBioCarbonizer;

@@ -1,4 +1,4 @@
-package mods.minetech;
+package mod.minetech;
 
 import mod.minetech.entities.EntityNitroGlycerin;
 import mod.minetech.entities.EntityStickyTorch;

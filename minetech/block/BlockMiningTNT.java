@@ -1,7 +1,7 @@
-package mods.minetech.block;
+package mod.minetech.block;
 import java.util.Random;
 
-import mods.minetech.entities.EntityMiningTNTPrimed;
+import mod.minetech.entities.EntityMiningTNTPrimed;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.EntityLiving;

@@ -1,4 +1,4 @@
-package mods.minetech;
+package mod.minetech;
 
 public enum MTEnumToolMaterial {
 	Copper("COPPER", 5, 1, 140, 5.0F, 1, 12),

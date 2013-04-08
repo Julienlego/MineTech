@@ -1,6 +1,6 @@
-package mods.minetech.items;
+package mod.minetech.items;
 
-import mods.minetech.MTEnumToolMaterial;
+import mod.minetech.MTEnumToolMaterial;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;

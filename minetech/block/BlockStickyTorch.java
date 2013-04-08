@@ -1,4 +1,4 @@
-package mods.minetech.block;
+package mod.minetech.block;
 import static net.minecraftforge.common.ForgeDirection.EAST;
 import static net.minecraftforge.common.ForgeDirection.NORTH;
 import static net.minecraftforge.common.ForgeDirection.SOUTH;

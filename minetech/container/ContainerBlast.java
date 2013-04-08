@@ -1,7 +1,7 @@
-package mods.minetech.container;
+package mod.minetech.container;
 
-import mods.minetech.slot.SlotBlast;
-import mods.minetech.tileentities.TileEntityBlast;
+import mod.minetech.slot.SlotBlast;
+import mod.minetech.tileentities.TileEntityBlast;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;

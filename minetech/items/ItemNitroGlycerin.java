@@ -1,6 +1,6 @@
-package mods.minetech.items;
+package mod.minetech.items;
 
-import mods.minetech.entities.EntityNitroGlycerin;
+import mod.minetech.entities.EntityNitroGlycerin;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;

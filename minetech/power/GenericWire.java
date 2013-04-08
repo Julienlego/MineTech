@@ -1,6 +1,6 @@
-package mods.minetech.power;
+package mod.minetech.power;
 
-import mods.minetech.block.GenericBlock;
+import mod.minetech.block.GenericBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.world.World;
 

@@ -1,5 +1,5 @@
-package mods.minetech.entities;
-import mods.minetech.MTCore;
+package mod.minetech.entities;
+import mod.minetech.MTCore;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.util.DamageSource;

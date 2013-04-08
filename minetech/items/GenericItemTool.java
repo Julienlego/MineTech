@@ -1,5 +1,5 @@
-package mods.minetech.items;
-import mods.minetech.MTEnumToolMaterial;
+package mod.minetech.items;
+import mod.minetech.MTEnumToolMaterial;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;

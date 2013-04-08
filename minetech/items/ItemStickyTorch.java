@@ -1,6 +1,6 @@
-package mods.minetech.items;
+package mod.minetech.items;
 
-import mods.minetech.entities.EntityStickyTorch;
+import mod.minetech.entities.EntityStickyTorch;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;

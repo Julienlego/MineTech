@@ -1,4 +1,4 @@
-package mods.minetech.items;
+package mod.minetech.items;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
 import cpw.mods.fml.relauncher.Side;

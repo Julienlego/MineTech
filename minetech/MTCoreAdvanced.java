@@ -1,4 +1,4 @@
-package mods.minetech;
+package mod.minetech;
 
 import mod.minetech.items.GenericItem;
 import net.minecraft.creativetab.CreativeTabs;

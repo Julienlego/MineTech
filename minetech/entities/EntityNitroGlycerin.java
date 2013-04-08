@@ -1,4 +1,4 @@
-package mods.minetech.entities;
+package mod.minetech.entities;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityThrowable;

@@ -1,7 +1,7 @@
-package mods.minetech.util;
+package mod.minetech.util;
 
-import mods.minetech.MTCore;
-import mods.minetech.MTCoreAdvanced;
+import mod.minetech.MTCore;
+import mod.minetech.MTCoreAdvanced;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
