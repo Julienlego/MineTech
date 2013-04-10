@@ -1,4 +1,4 @@
-package mod.minetech.items;
+package mods.minetech.items;
 
 
 public class ItemCoke extends GenericItem{

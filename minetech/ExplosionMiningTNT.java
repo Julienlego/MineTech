@@ -1,4 +1,4 @@
-package mod.minetech;
+package mods.minetech;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

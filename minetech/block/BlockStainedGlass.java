@@ -1,4 +1,4 @@
-package mod.minetech.block;
+package mods.minetech.block;
 
 import java.util.Random;
 

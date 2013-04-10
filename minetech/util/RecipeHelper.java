@@ -1,4 +1,4 @@
-package mod.minetech.util;
+package mods.minetech.util;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

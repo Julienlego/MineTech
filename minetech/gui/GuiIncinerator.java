@@ -1,8 +1,8 @@
-package mod.minetech.gui;
-import mod.minetech.container.ContainerBioCarbonizer;
-import mod.minetech.container.ContainerIncinerator;
-import mod.minetech.tileentities.TileEntityBioCarbonizer;
-import mod.minetech.tileentities.TileEntityIncinerator;
+package mods.minetech.gui;
+import mods.minetech.container.ContainerBioCarbonizer;
+import mods.minetech.container.ContainerIncinerator;
+import mods.minetech.tileentities.TileEntityBioCarbonizer;
+import mods.minetech.tileentities.TileEntityIncinerator;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;

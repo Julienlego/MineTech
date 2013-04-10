@@ -1,9 +1,9 @@
-package mod.minetech.block;
+package mods.minetech.block;
 import java.util.Random;
 
-import mod.minetech.MTCore;
-import mod.minetech.container.GenericBlockContainer;
-import mod.minetech.tileentities.TileEntityBlast;
+import mods.minetech.MTCore;
+import mods.minetech.container.GenericBlockContainer;
+import mods.minetech.tileentities.TileEntityBlast;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -36,7 +36,7 @@ public class BlockBlast extends GenericBlockContainer{
     private static boolean keepBlastInventory = false;
     
     @SideOnly(Side.CLIENT)
-    Icon[] textures;
+    private Icon[] textures;
     
     public BlockBlast(int i, boolean flag)
     {
@@ -47,8 +47,12 @@ public class BlockBlast extends GenericBlockContainer{
     
     @Override
     @SideOnly(Side.CLIENT)
-    public void func_94332_a(IconRegister par1IconRegister){
+    public void updateIcons(IconRegister par1IconRegister){
     	textures = new Icon[4];
+    	textures[0] = par1IconRegister.func_94245_a("minetech:blastTop");
+    	textures[1] = par1IconRegister.func_94245_a("minetech:blastOn");
+    	textures[2] = par1IconRegister.func_94245_a("minetech:blastOff");
+    	textures[3] = par1IconRegister.func_94245_a("minetech:blastSide");
     }
 
       public int idDropped(int i, Random random, int j){
@@ -93,12 +97,19 @@ public class BlockBlast extends GenericBlockContainer{
     
     @SideOnly(Side.CLIENT)
     /**
-     * Returns the block texture based on the side being looked at.  Args: side
+     * Returns the block texture based on the side being looked at.  Args: side, metadata
      */
-    public Icon getBlockTextureFromSide(int par1, int par2)
+    public Icon getBlockTextureFromSideAndMetadata(int side, int meta)
     {
-		return null;
-        
+    	if (side == 1 || side == 0)
+        {
+            return textures[0];
+        }
+    	
+        else
+        {
+            return side != meta ? textures[3] : (this.isActive ? textures[1] : textures[2]);
+        }
     }
     
     @SideOnly(Side.CLIENT)

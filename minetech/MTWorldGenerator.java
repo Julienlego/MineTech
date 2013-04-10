@@ -1,4 +1,4 @@
-package mod.minetech;
+package mods.minetech;
 import java.util.Random;
 
 import net.minecraft.world.World;

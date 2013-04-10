@@ -1,11 +1,11 @@
-package mod.minetech.block;
+package mods.minetech.block;
 
 import java.util.Random;
 
-import mod.minetech.MTCore;
-import mod.minetech.container.GenericBlockContainer;
-import mod.minetech.tileentities.TileEntityBioCarbonizer;
-import mod.minetech.tileentities.TileEntityIncinerator;
+import mods.minetech.MTCore;
+import mods.minetech.container.GenericBlockContainer;
+import mods.minetech.tileentities.TileEntityBioCarbonizer;
+import mods.minetech.tileentities.TileEntityIncinerator;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -38,8 +38,12 @@ public class BlockIncinerator extends GenericBlockContainer
     
     @Override
     @SideOnly(Side.CLIENT)
-    public void func_94332_a(IconRegister par1IconRegister){
+    public void updateIcons(IconRegister par1IconRegister){
     	textures = new Icon[4];
+    	textures[0] = par1IconRegister.func_94245_a("minetech:biocarbonizerTop");
+    	textures[1] = par1IconRegister.func_94245_a("minetech:biocarbonizerOn");
+    	textures[2] = par1IconRegister.func_94245_a("minetech:biocarbonizerOff");
+    	textures[3] = par1IconRegister.func_94245_a("minetech:biocarbonizerSide");
     }
     
     //This function tells Mine craft what item to drop when you break one of these blocks
@@ -85,20 +89,19 @@ public class BlockIncinerator extends GenericBlockContainer
     }
     
     @SideOnly(Side.CLIENT)
-
+    @Override
     /**
      * Retrieves the block texture to use based on the display side. Args: iBlockAccess, x, y, z, side
      */
-    public Icon getBlockTextureFromSide(int par1, int par2)
+    public Icon getBlockTextureFromSideAndMetadata(int side, int meta)
     {
-    	if (par1 == 1 || par1 == 0)
+    	if (side == 1 || side == 0)
         {
-            return this.blockIndexInTexture + 3;
+            return textures[0];
         }
         else
         {
-            int var6 = iblockaccess.getBlockMetadata(i, j, k);
-            return par1 != var6 ? this.blockIndexInTexture : (this.isActive ? this.blockIndexInTexture + 1 : this.blockIndexInTexture);
+            return side != meta ? textures[3] : (this.isActive ? textures[1] : textures[2]);
         }
     }
     

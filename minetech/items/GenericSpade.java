@@ -1,6 +1,6 @@
-package mod.minetech.items;
+package mods.minetech.items;
 
-import mod.minetech.MTEnumToolMaterial;
+import mods.minetech.MTEnumToolMaterial;
 import net.minecraft.block.Block;
 
 public class GenericSpade extends GenericItemTool{

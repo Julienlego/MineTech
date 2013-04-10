@@ -1,7 +1,7 @@
-package mod.minetech.block;
+package mods.minetech.block;
 import java.util.Random;
 
-import mod.minetech.entities.EntityMiningTNTPrimed;
+import mods.minetech.entities.EntityMiningTNTPrimed;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.EntityLiving;
@@ -10,6 +10,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -17,7 +18,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class BlockMiningTNT extends GenericBlock
 {
 	@SideOnly(Side.CLIENT)
-    Icon[] textures;
+    private Icon[] textures;
 	
     public BlockMiningTNT(int par1)
     {
@@ -26,29 +27,31 @@ public class BlockMiningTNT extends GenericBlock
     
     @Override
     @SideOnly(Side.CLIENT)
-    public void func_94332_a(IconRegister par1IconRegister){
-    	textures = new Icon[4];
+    public void updateIcons(IconRegister par1IconRegister){
+    	textures = new Icon[3];
+    	textures[0] = par1IconRegister.func_94245_a("minetech:miningtntTop");
+    	textures[1] = par1IconRegister.func_94245_a("minetech:miningtntBot");
+    	textures[2] = par1IconRegister.func_94245_a("minetech:miningtntSide");
+    }
+    
+    @Override
+    /**
+     * Returns texture of given side
+     */
+    public Icon getBlockTexture(IBlockAccess world, int x, int y, int z, int blockSide){
+    	return blockSide == 0 ? textures[1] : (blockSide == 1 ? textures[0] : textures[2]);
+    		
     }
 
-    @SideOnly(Side.CLIENT)
-    /**
-     * Returns the block texture based on the side being looked at.  Args: side
-     */
-    public Icon getBlockTextureFromSideAndMetadata(int par1, int par2)
-    {
-        if (par1 == 0)
-        {
-            return this.blockIndexInTexture - 1;
-        }
 
-        if (par1 == 1)
-        {
-            return this.blockIndexInTexture + 1;
-        }
-        else
-        {
-            return this.blockIndexInTexture;
-        }
+    @SideOnly(Side.CLIENT)
+    @Override
+    /**
+     * Returns the Icon to render in the inventory
+     */
+    public Icon getBlockTextureFromSideAndMetadata(int blockSide, int par2)
+    {
+    	return blockSide == 0 ? textures[1] : (blockSide == 1 ? textures[0] : textures[2]);
     }
 
     /**

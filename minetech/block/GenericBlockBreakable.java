@@ -1,4 +1,4 @@
-package mod.minetech.block;
+package mods.minetech.block;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -38,7 +38,7 @@ public class GenericBlockBreakable extends GenericBlock{
     
     @SideOnly(Side.CLIENT)
 	@Override
-	public void func_94332_a(IconRegister parIconRegister){
-		this.field_94336_cN = parIconRegister.func_94245_a(texturePathName);
+	public void updateIcons(IconRegister parIconRegister){
+		this.blockIcon = parIconRegister.func_94245_a(texturePathName);
 	}
 }

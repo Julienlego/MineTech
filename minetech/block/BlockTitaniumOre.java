@@ -1,7 +1,7 @@
-package mod.minetech.block;
+package mods.minetech.block;
 import java.util.Random;
 
-import mod.minetech.MTCore;
+import mods.minetech.MTCore;
 import net.minecraft.block.material.Material;
 
 public class BlockTitaniumOre extends GenericBlock{

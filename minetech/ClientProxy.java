@@ -1,4 +1,4 @@
-package mod.minetech;
+package mods.minetech;
 
 import net.minecraftforge.client.MinecraftForgeClient;
 

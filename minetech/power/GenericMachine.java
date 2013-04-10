@@ -1,6 +1,6 @@
-package mod.minetech.power;
+package mods.minetech.power;
 
-import mod.minetech.block.GenericBlock;
+import mods.minetech.block.GenericBlock;
 import net.minecraft.block.material.Material;
 
 public class GenericMachine extends GenericBlock {

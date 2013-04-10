@@ -1,8 +1,8 @@
-package mod.minetech.tileentities;
+package mods.minetech.tileentities;
 
-import mod.minetech.MTCore;
-import mod.minetech.block.BlockIncinerator;
-import mod.minetech.util.IncineratorRecipes;
+import mods.minetech.MTCore;
+import mods.minetech.block.BlockIncinerator;
+import mods.minetech.util.IncineratorRecipes;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;

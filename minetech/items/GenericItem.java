@@ -1,4 +1,4 @@
-package mod.minetech.items;
+package mods.minetech.items;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
 import cpw.mods.fml.relauncher.Side;
@@ -7,7 +7,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class GenericItem extends Item {
 	
 	/* location where the texture resides */
-	private String texturePathName = "minetech/common: ";
+	private String texturePathName = "minetech:";
 	
 	public GenericItem(int id){
 		super(id);
@@ -29,7 +29,7 @@ public class GenericItem extends Item {
 	
 	@SideOnly(Side.CLIENT)
 	@Override
-	public void func_94581_a(IconRegister parIconRegister){
+	public void updateIcons(IconRegister parIconRegister){
 		this.iconIndex = parIconRegister.func_94245_a(texturePathName);
 	}
 

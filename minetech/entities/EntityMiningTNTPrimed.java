@@ -1,6 +1,6 @@
-package mod.minetech.entities;
+package mods.minetech.entities;
 
-import mod.minetech.ExplosionMiningTNT;
+import mods.minetech.ExplosionMiningTNT;
 import net.minecraft.entity.Entity;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;

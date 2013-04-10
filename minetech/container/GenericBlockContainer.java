@@ -1,6 +1,6 @@
-package mod.minetech.container;
+package mods.minetech.container;
 
-import mod.minetech.block.GenericBlock;
+import mods.minetech.block.GenericBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;

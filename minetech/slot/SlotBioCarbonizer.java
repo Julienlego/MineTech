@@ -1,4 +1,4 @@
-package mod.minetech.slot;
+package mods.minetech.slot;
 
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.player.EntityPlayer;

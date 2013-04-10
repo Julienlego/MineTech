@@ -1,4 +1,4 @@
-package mod.minetech.block;
+package mods.minetech.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -9,7 +9,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class GenericBlock extends Block{
 	
 	/* location where the texture resides */
-	protected String texturePathName = "minetech/common: ";
+	protected String texturePathName = "minetech:";
 	
 	public GenericBlock(int par1){
 		super(par1, Material.iron);
@@ -37,7 +37,7 @@ public class GenericBlock extends Block{
 	
 	@SideOnly(Side.CLIENT)
 	@Override
-	public void func_94332_a(IconRegister parIconRegister){
-		this.field_94336_cN = parIconRegister.func_94245_a(texturePathName);
+	public void updateIcons(IconRegister parIconRegister){
+		this.blockIcon = parIconRegister.func_94245_a(texturePathName);
 	}
 }

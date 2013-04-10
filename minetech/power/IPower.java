@@ -1,4 +1,4 @@
-package mod.minetech.power;
+package mods.minetech.power;
 
 public interface IPower {
 	

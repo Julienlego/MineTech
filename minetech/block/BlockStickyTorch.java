@@ -1,4 +1,4 @@
-package mod.minetech.block;
+package mods.minetech.block;
 import static net.minecraftforge.common.ForgeDirection.EAST;
 import static net.minecraftforge.common.ForgeDirection.NORTH;
 import static net.minecraftforge.common.ForgeDirection.SOUTH;
@@ -23,7 +23,6 @@ public class BlockStickyTorch extends GenericBlockBreakable{
     {
         super(par1, Material.circuits, true);
         setTickRandomly(true);
-        setCreativeTab(CreativeTabs.tabDecorations);
     }
 
     /**

@@ -1,6 +1,6 @@
-package mod.minetech.container;
-import mod.minetech.slot.SlotBioCarbonizer;
-import mod.minetech.tileentities.TileEntityIncinerator;
+package mods.minetech.container;
+import mods.minetech.slot.SlotBioCarbonizer;
+import mods.minetech.tileentities.TileEntityIncinerator;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;

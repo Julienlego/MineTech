@@ -1,6 +1,6 @@
-package mod.minetech.gui;
-import mod.minetech.container.ContainerBlast;
-import mod.minetech.tileentities.TileEntityBlast;
+package mods.minetech.gui;
+import mods.minetech.container.ContainerBlast;
+import mods.minetech.tileentities.TileEntityBlast;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;

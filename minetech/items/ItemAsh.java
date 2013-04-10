@@ -1,4 +1,4 @@
-package mod.minetech.items;
+package mods.minetech.items;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCocoa;

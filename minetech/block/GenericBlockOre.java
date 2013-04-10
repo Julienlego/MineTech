@@ -1,4 +1,4 @@
-package mod.minetech.block;
+package mods.minetech.block;
 
 import net.minecraft.block.material.Material;
 

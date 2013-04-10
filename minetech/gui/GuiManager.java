@@ -1,17 +1,13 @@
-package mod.minetech.gui;
+package mods.minetech.gui;
 
-import mod.minetech.container.ContainerBioCarbonizer;
-import mod.minetech.container.ContainerBlast;
-import mod.minetech.container.ContainerIncinerator;
-import mod.minetech.tileentities.TileEntityBioCarbonizer;
-import mod.minetech.tileentities.TileEntityBlast;
-import mod.minetech.tileentities.TileEntityIncinerator;
+import mods.minetech.container.*;
+import mods.minetech.tileentities.*;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import cpw.mods.fml.common.network.IGuiHandler;
 
-public abstract class GuiManager implements IGuiHandler{
+public class GuiManager implements IGuiHandler{
 	
 	/**
 	 * Returns the Gui linked with the guiID

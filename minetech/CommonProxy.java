@@ -1,4 +1,4 @@
-package mod.minetech;
+package mods.minetech;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;

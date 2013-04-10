@@ -1,13 +1,14 @@
-package mod.minetech;
+package mods.minetech;
 
-import mod.minetech.entities.EntityNitroGlycerin;
-import mod.minetech.entities.EntityStickyTorch;
-import mod.minetech.tileentities.TileEntityBioCarbonizer;
-import mod.minetech.tileentities.TileEntityBlast;
-import mod.minetech.tileentities.TileEntityIncinerator;
+import mods.minetech.entities.EntityNitroGlycerin;
+import mods.minetech.entities.EntityStickyTorch;
+import mods.minetech.tileentities.TileEntityBioCarbonizer;
+import mods.minetech.tileentities.TileEntityBlast;
+import mods.minetech.tileentities.TileEntityIncinerator;
 import net.minecraft.item.ItemStack;
 import net.minecraft.src.ModLoader;
 import net.minecraftforge.oredict.OreDictionary;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -99,26 +100,23 @@ public class MTRegistry{
 		
 		//Registers all blocks
 		public static void registerBlocks(){
-	        GameRegistry.registerBlock(MTCore.miningTnt, "miningTnt");
-	        GameRegistry.registerBlock(MTCore.bioCarbonizerOn, "bioCarbonizerOn");
-	        GameRegistry.registerBlock(MTCore.bauxiteOre, "bauziteOre");
-	        GameRegistry.registerBlock(MTCore.bioCarbonizerOff, "bioCarbonizerOff");
-	        GameRegistry.registerBlock(MTCore.copperOre, "copperOre");
-	        GameRegistry.registerBlock(MTCore.lumpgraphite, "lumpGraphite");
-	        GameRegistry.registerBlock(MTCore.dolomite, "dolomite");
-	        GameRegistry.registerBlock(MTCore.titaniumOre, "titaniumOre");
-	        GameRegistry.registerBlock(MTCore.magnesiumBrick, "magnesiumBrick");
-	        GameRegistry.registerBlock(MTCore.magnesiumBlock, "magnesiumBlock");
-	        GameRegistry.registerBlock(MTCore.blastOn, "blastOn");
-	        GameRegistry.registerBlock(MTCore.blastOff, "blastOff");
-	        GameRegistry.registerBlock(MTCore.uraninite, "uraninite");
-	        GameRegistry.registerBlock(MTCore.stickyglowBlock, "stickyglowBlock");
-	        GameRegistry.registerBlock(MTCore.redGlass, "redGlass");
-	        GameRegistry.registerBlock(MTCore.blueGlass, "blueGlass");
-	        GameRegistry.registerBlock(MTCore.greenGlass, "greenGlass");
-	        GameRegistry.registerBlock(MTCore.yellowGlass, "yellowGlass");
-	        GameRegistry.registerBlock(MTCore.incineratorOff, "incineratorOff");
-	        GameRegistry.registerBlock(MTCore.incineratorOn, "incineratorOn");
+	        GameRegistry.registerBlock(MTCore.miningTnt, "Mining TNT");
+	        GameRegistry.registerBlock(MTCore.bauxiteOre, "Bauxite");
+	        GameRegistry.registerBlock(MTCore.bioCarbonizerOff, "Bio Carbonizer");
+	        GameRegistry.registerBlock(MTCore.copperOre, "Porphyry Copper");
+	        GameRegistry.registerBlock(MTCore.lumpgraphite, "Lump Graphite");
+	        GameRegistry.registerBlock(MTCore.dolomite, "Dolomite");
+	        GameRegistry.registerBlock(MTCore.titaniumOre, "Titanium Ore");
+	        GameRegistry.registerBlock(MTCore.magnesiumBrick, "Magnesium Brick");
+	        GameRegistry.registerBlock(MTCore.magnesiumBlock, "Magnesium Block");
+	        GameRegistry.registerBlock(MTCore.blastOff, "Blast");
+	        GameRegistry.registerBlock(MTCore.uraninite, "Uraninite");
+	        GameRegistry.registerBlock(MTCore.stickyglowBlock, "Sticky Glow Block");
+	        GameRegistry.registerBlock(MTCore.redGlass, "Red Glass");
+	        GameRegistry.registerBlock(MTCore.blueGlass, "Blue Glass");
+	        GameRegistry.registerBlock(MTCore.greenGlass, "Green Glass");
+	        GameRegistry.registerBlock(MTCore.yellowGlass, "Yellow Glass");
+	        GameRegistry.registerBlock(MTCore.incineratorOff, "Incinerator");
 	        
 	        /* adds Advanced Machines if enabled */
 	        if(MTCore.isAdvanced()){
@@ -138,10 +136,10 @@ public class MTRegistry{
 		
 		/** registers all entities and tile entities*/
 		public static void registerAllEntities(){
-			//EntityRegistry.registerModEntity(EntityNitroGlycerin.class, "nitroGlycerin", 1, MTCore.instance, 80, 3, true);
-			//EntityRegistry.registerModEntity(EntityStickyTorch.class, "stickyTorch", 2, MTCore.instance, 80, 3, true);
-			ModLoader.registerEntityID(EntityNitroGlycerin.class, "nitroGlycerin", 1);
-			ModLoader.registerEntityID(EntityStickyTorch.class, "stickyTorch", 2);
+			//EntityRegistry.registerModEntity(EntityNitroGlycerin.class, "nitroGlycerin", 1, MTCore.instance, 80, 3, false);
+			//EntityRegistry.registerModEntity(EntityStickyTorch.class, "stickyTorch", 2, MTCore.instance, 80, 3, false);
+			ModLoader.registerEntityID(EntityNitroGlycerin.class, "nitroGlycerin", 300);
+			ModLoader.registerEntityID(EntityStickyTorch.class, "stickyTorch", 301);
 			
 			GameRegistry.registerTileEntity(TileEntityBioCarbonizer.class, "bioCarbonizer");
 			GameRegistry.registerTileEntity(TileEntityBlast.class, "blast");

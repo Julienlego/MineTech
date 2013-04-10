@@ -1,5 +1,5 @@
-package mod.minetech.items;
-import mod.minetech.MTEnumToolMaterial;
+package mods.minetech.items;
+import mods.minetech.MTEnumToolMaterial;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;

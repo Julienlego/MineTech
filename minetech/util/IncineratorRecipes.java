@@ -1,8 +1,8 @@
-package mod.minetech.util;
+package mods.minetech.util;
 import java.util.HashMap;
 import java.util.Map;
 
-import mod.minetech.MTCore;
+import mods.minetech.MTCore;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
